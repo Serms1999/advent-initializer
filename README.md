@@ -53,3 +53,16 @@ options:
 ```
 
 ## Installation
+
+Pip:
+
+```zsh
+pip install adventofcode-initializer
+```
+
+Build from source:
+```zsh
+git clone https://github.com/Serms1999/advent-initializer.git
+cd advent-initializer
+pip install .
+```
