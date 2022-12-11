@@ -7,7 +7,7 @@ and the input files.
 ## Usage
 
 ```
-usage: adventofcode_initializer.py [-h] {download,set-session-cookie} ...
+usage: adventofcode_initializer [-h] {download,set-session-cookie} ...
 
 Download Advent of Code problems as markdown files and also its inputs
 
@@ -24,7 +24,7 @@ In order to download inputs or part 2, you have to set the 'session' cookie.
 ```
 
 ```
-usage: adventofcode_initializer.py set-session-cookie [-h] session-cookie
+usage: adventofcode_initializer set-session-cookie [-h] session-cookie
 
 positional arguments:
   session-cookie  Cookie required to download inputs or problems' part 2
@@ -36,7 +36,7 @@ You only have to do save it once
 ```
 
 ```
-usage: adventofcode_initializer.py download [-h] [-a] [-d [1-25]] [-y YEAR]
+usage: adventofcode_initializer download [-h] [-a] [-d [1-25]] [-y YEAR]
                                             [--both-parts] [--part-2]
 
 options:
