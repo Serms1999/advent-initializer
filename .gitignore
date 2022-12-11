@@ -1,0 +1,10 @@
+# Remove Python compiled files
+*/__pycache__
+
+# IDE config files
+.idea/
+
+# Package build folders
+adventofcode_initializer.egg-info/
+build/
+dist/
