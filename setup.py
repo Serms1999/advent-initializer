@@ -11,7 +11,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='adventofcode-initializer',
-    version='1.0.0',
+    version='1.0.1',
     license=license,
     author='Sergio Marín Sánchez',
     author_email='serms1999@gmail.com',
