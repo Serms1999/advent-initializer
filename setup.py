@@ -6,8 +6,8 @@ with open('README.md', mode='r') as file:
 with open('COPYING', mode='r') as file:
     license = file.read()
 
-with open('requirements.txt') as f:
-    required = f.read().splitlines()
+with open('requirements.txt', mode='r') as file:
+    required = file.read().splitlines()
 
 setup(
     name='adventofcode-initializer',
