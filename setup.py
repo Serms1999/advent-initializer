@@ -22,7 +22,7 @@ setup(
     homepage='https://github.com/Serms1999/advent-initializer',
     download_url=f'https://github.com/Serms1999/advent-initializer/releases/tag/v{version}',
     issues_url='https://github.com/Serms1999/advent-initializer/issues',
-    keywords="advent-of-code development markdown"
+    keywords=['advent-of-code', 'development', 'markdown'],
     packages=find_packages(),
     python_requires='>=3.6',
     install_requires=required,
