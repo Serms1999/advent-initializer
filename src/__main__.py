@@ -132,9 +132,9 @@ def get_parts_to_download(both: bool, part_2: bool) -> list:
 
 def replace_internal_links(markdown_text: str) -> str:
     def add_advent_url(match):
-        return f'<a href=\"https://adventofcode.com{match.group(1)}\"'
+        return f'<a href=\"https://adventofcode.com{match.group(1)}\">{match.group(2)}</a>'
 
-    return re.sub(pattern=r'<a href=\"(\/.*)\"', repl=add_advent_url, string=markdown_text)
+    return re.sub(pattern=r'<a href=\"(\/[^>]+)\">([^<>]+)</a>', repl=add_advent_url, string=markdown_text)
 
 
 def remove_last_code_line(markdown_text: str) -> str:
@@ -149,7 +149,10 @@ def fix_emphasize_code(markdown_text: str) -> str:
 
 
 def fix_html_format(markdown_text: str) -> str:
+    print(markdown_text)
     fix_links = replace_internal_links(markdown_text)
+    print('\n\n')
+    print(fix_links)
     fix_code_section = remove_last_code_line(fix_links)
     return fix_emphasize_code(fix_code_section)
 

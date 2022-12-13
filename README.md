@@ -6,6 +6,8 @@ and the input files.
 
 ## Usage
 
+The utility has two main options (`set-session-cookie` and `download`). 
+
 ```
 usage: adventofcode_initializer [-h] {download,set-session-cookie} ...
 
@@ -23,6 +25,8 @@ options:
 In order to download inputs or part 2, you have to set the 'session' cookie.
 ```
 
+Setting the correspondig cookie the user will be able to download custom inputs and new problem parts.
+
 ```
 usage: adventofcode_initializer set-session-cookie [-h] session-cookie
 
@@ -34,6 +38,10 @@ options:
 
 You only have to do save it once
 ```
+
+By default, the utility downloads the first part of the problem. In addition, part two can be appended to the README file.
+
+The utility can also download previous editions or already completed days.
 
 ```
 usage: adventofcode_initializer download [-h] [-a] [-d [1-25]] [-y YEAR]
