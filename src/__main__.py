@@ -149,10 +149,7 @@ def fix_emphasize_code(markdown_text: str) -> str:
 
 
 def fix_html_format(markdown_text: str) -> str:
-    print(markdown_text)
     fix_links = replace_internal_links(markdown_text)
-    print('\n\n')
-    print(fix_links)
     fix_code_section = remove_last_code_line(fix_links)
     return fix_emphasize_code(fix_code_section)
 
